@@ -1,0 +1,328 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LK Snacks: snacks deliciosos, calidad garantizada y entrega rápida.">
+  <title>LK Snacks | Conoce nuestros productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap brand-row">
+    <a class="brand" href="#inicio">LK <span>SNACKS</span> 🍿</a>
+    <div class="slogan">“Si puedes, necesitas snacks, <b>¡nosotros te los damos!</b>”</div>
+  </div>
+
+  <nav class="wrap" aria-label="Menú principal">
+    <a class="active" href="#inicio">⌂ Inicio</a>
+    <a href="#productos">▦ Productos</a>
+    <a href="#nosotros">♟ Nosotros</a>
+    <a href="#contacto">✉ Contacto</a>
+    <a href="#opiniones">⭐ Opiniones</a>
+    <button class="cart-btn" type="button" onclick="showCart()">🛒 <span id="cartCount">0</span></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- INICIO -->
+  <section class="hero" id="inicio">
+    <div class="hero-logo">
+      <div>
+        <div class="chef">👨‍🍳👩‍🍳</div>
+        <h2>LK SNACKS</h2>
+        <p>★ ★ ★</p>
+      </div>
+    </div>
+
+    <div class="hero-copy">
+      <h1>¡Bienvenido a <span>LK Snacks!</span></h1>
+      <p>Disfruta una gran variedad de snacks preparados con sabor, calidad y mucho entusiasmo. ¡Tenemos algo delicioso para cada antojo!</p>
+
+      <div class="features">
+        <div class="feature"><i>🍿</i>Snacks deliciosos</div>
+        <div class="feature"><i>🏆</i>Calidad garantizada</div>
+        <div class="feature"><i>⏱️</i>Entrega rápida</div>
+        <div class="feature"><i>😊</i>Siempre una sonrisa</div>
+      </div>
+
+      <a class="cta" href="#productos">🛒 Conoce nuestros productos →</a>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos">
+    <h2 class="section-title">Conoce nuestros <span>Productos</span></h2>
+
+    <div class="products">
+
+      <article class="product">
+        <div class="product-art">🍿</div>
+        <h3>Palomitas</h3>
+        <p>Clásicas, mantequilla y sabores especiales.</p>
+        <div class="price">Desde $25</div>
+        <button class="add" onclick="addToCart('Palomitas')">Agregar</button>
+      </article>
+
+      <article class="product">
+        <div class="product-art">🧀</div>
+        <h3>Nachos</h3>
+        <p>Totopos crujientes con queso y jalapeños.</p>
+        <div class="price">Desde $35</div>
+        <button class="add" onclick="addToCart('Nachos')">Agregar</button>
+      </article>
+
+      <article class="product">
+        <div class="product-art">🌭</div>
+        <h3>Hot Dogs</h3>
+        <p>Deliciosos y preparados al momento.</p>
+        <div class="price">Desde $30</div>
+        <button class="add" onclick="addToCart('Hot Dogs')">Agregar</button>
+      </article>
+
+      <article class="product">
+        <div class="product-art">🍧</div>
+        <h3>Raspados</h3>
+        <p>Refrescantes, con distintos sabores.</p>
+        <div class="price">Desde $20</div>
+        <button class="add" onclick="addToCart('Raspados')">Agregar</button>
+      </article>
+
+      <article class="product">
+        <div class="product-art">🥤</div>
+        <h3>Bebidas</h3>
+        <p>Opciones frías para acompañar tu snack.</p>
+        <div class="price">Desde $18</div>
+        <button class="add" onclick="addToCart('Bebidas')">Agregar</button>
+      </article>
+
+      <article class="product">
+        <div class="product-art">🥨</div>
+        <h3>Botanas</h3>
+        <p>Una selección para compartir y disfrutar.</p>
+        <div class="price">Desde $20</div>
+        <button class="add" onclick="addToCart('Botanas')">Agregar</button>
+      </article>
+
+      <article class="product">
+        <div class="product-art">🍩</div>
+        <h3>Dulces</h3>
+        <p>Galletas, donas y antojos dulces.</p>
+        <div class="price">Desde $15</div>
+        <button class="add" onclick="addToCart('Dulces')">Agregar</button>
+      </article>
+
+      <article class="product">
+        <div class="product-art">🧁</div>
+        <h3>Postres</h3>
+        <p>Un toque dulce para cerrar con broche de oro.</p>
+        <div class="price">Desde $30</div>
+        <button class="add" onclick="addToCart('Postres')">Agregar</button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros">
+    <h2 class="section-title">¿Quiénes <span>somos?</span></h2>
+
+    <div class="about">
+      <div>
+        <h3>🚀 Misión</h3>
+        <p>Compartir momentos felices a través de snacks deliciosos, preparados con calidad y dedicación.</p>
+      </div>
+
+      <div class="about-center">
+        <h2>LK Snacks</h2>
+        <p>Somos una marca apasionada por llevarte los mejores snacks, con calidad, sabor y el mejor servicio.</p>
+      </div>
+
+      <div>
+        <h3>🎯 Visión</h3>
+        <p>Ser la marca de snacks favorita, reconocida por nuestra calidad, variedad e innovación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN Y HORARIO -->
+  <section class="info-grid" id="contacto">
+
+    <!-- UBICACIÓN -->
+    <div class="info-card">
+      <h2>📍 Ubicación</h2>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4459.341717234907!2d-99.57229217007665!3d19.97304224968074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d249004ecc863b%3A0x6ed7d2af0e1b6138!2sLK%20SNACKS!5e0!3m2!1sen!2smx!4v1794267153394!5m2!1sen!2smx"
+        width="100%"
+        height="350"
+        style="border:0; border-radius:12px;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+
+      <p>Consulta nuestra ubicación y ven a visitarnos.</p>
+    </div>
+
+    <!-- HORARIO -->
+    <div class="info-card schedule-card">
+      <h2>🕒 Horario de atención</h2>
+
+      <div class="schedule-item">
+        <span class="schedule-icon">📅</span>
+        <div>
+          <h3>Sábados</h3>
+          <p>4:00 p. m. - 10:30 p. m.</p>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <span class="schedule-icon">📅</span>
+        <div>
+          <h3>Domingos</h3>
+          <p>4:00 p. m. - 9:30 p. m.</p>
+        </div>
+      </div>
+
+      <div class="schedule-message">
+        <p>🍿 ¡Te esperamos!</p>
+        <span>Ven y disfruta de tus snacks favoritos.</span>
+      </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="info-card full">
+      <h2>📲 Ponte en contacto</h2>
+      <p>Escríbenos para conocer más sobre nuestros productos y pedidos.</p>
+
+      <div class="contact-row">
+        <a href="#opiniones">⭐ Dejar opinión</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+  </section>
+
+
+<!-- OPINIONES -->
+<section id="opiniones">
+  <h2 class="section-title">Tu opinión <span>nos importa</span></h2>
+
+  <div class="opinion-box">
+    <p>Cuéntanos cómo fue tu experiencia en LK Snacks. Tus comentarios nos ayudan a mejorar.</p>
+
+    <form
+      name="opiniones-lk-snacks"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      id="opinionForm">
+
+      <!-- Identificador de Netlify -->
+      <input type="hidden" name="form-name" value="opiniones-lk-snacks">
+
+      <!-- Protección contra envíos automáticos -->
+      <div hidden>
+        <label>No llenar este campo:
+          <input name="bot-field">
+        </label>
+      </div>
+
+      <div class="form-grid">
+
+        <div>
+          <label for="nombre">Nombre</label>
+          <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            placeholder="Escribe tu nombre"
+            required>
+        </div>
+
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input
+            id="correo"
+            name="correo"
+            type="email"
+            placeholder="tunombre@correo.com"
+            required>
+        </div>
+
+        <div>
+          <label for="calificacion">¿Cómo calificas tu experiencia?</label>
+          <select id="calificacion" name="calificacion" required>
+            <option value="">Selecciona una opción</option>
+            <option>Excelente</option>
+            <option>Muy buena</option>
+            <option>Buena</option>
+            <option>Necesita mejorar</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="producto">¿Qué producto probaste?</label>
+          <select id="producto" name="producto">
+            <option>Palomitas</option>
+            <option>Nachos</option>
+            <option>Hot Dogs</option>
+            <option>Raspados</option>
+            <option>Bebidas</option>
+            <option>Botanas</option>
+            <option>Dulces</option>
+            <option>Postres</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label for="comentario">Tu opinión o sugerencia</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            placeholder="Escribe aquí tus comentarios..."
+            required></textarea>
+        </div>
+
+        <div class="full">
+          <button class="submit" type="submit">
+            Enviar opinión ✉
+          </button>
+
+          <div id="formMessage" role="status"></div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+  <div class="wrap">
+
+    <div class="socials">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener">🔵 Facebook</a>
+      <a href="https://www.instagram.com/web.lk_snacks?srtk=bjM4NHBscHd5am9n" target="_blank" rel="noopener">📸 Instagram</a>
+      <a href="#contacto">▶ Contáctanos</a>
+      <a href="https://wa.me/" target="_blank" rel="noopener">🟢 WhatsApp</a>
+    </div>
+
+    <p>© 2026 LK Snacks | ¡Gracias por elegirnos!</p>
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
+
