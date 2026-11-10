@@ -210,6 +210,7 @@
   </section>
 
 
+
 <!-- OPINIONES -->
 <section id="opiniones">
   <h2 class="section-title">Tu opinión <span>nos importa</span></h2>
@@ -220,6 +221,7 @@
     <form
       name="opiniones-lk-snacks"
       method="POST"
+      action="/gracias.html"
       data-netlify="true"
       netlify-honeypot="bot-field"
       id="opinionForm">
@@ -227,9 +229,10 @@
       <!-- Identificador de Netlify -->
       <input type="hidden" name="form-name" value="opiniones-lk-snacks">
 
-      <!-- Protección contra envíos automáticos -->
+      <!-- Protección contra spam -->
       <div hidden>
-        <label>No llenar este campo:
+        <label>
+          No llenar este campo:
           <input name="bot-field">
         </label>
       </div>
@@ -260,25 +263,25 @@
           <label for="calificacion">¿Cómo calificas tu experiencia?</label>
           <select id="calificacion" name="calificacion" required>
             <option value="">Selecciona una opción</option>
-            <option>Excelente</option>
-            <option>Muy buena</option>
-            <option>Buena</option>
-            <option>Necesita mejorar</option>
+            <option value="Excelente">Excelente</option>
+            <option value="Muy buena">Muy buena</option>
+            <option value="Buena">Buena</option>
+            <option value="Necesita mejorar">Necesita mejorar</option>
           </select>
         </div>
 
         <div>
           <label for="producto">¿Qué producto probaste?</label>
-          <select id="producto" name="producto">
-            <option>Palomitas</option>
-            <option>Nachos</option>
-            <option>Hot Dogs</option>
-            <option>Raspados</option>
-            <option>Bebidas</option>
-            <option>Botanas</option>
-            <option>Dulces</option>
-            <option>Postres</option>
-            <option>Otro</option>
+          <select id="producto" name="producto" required>
+            <option value="Palomitas">Palomitas</option>
+            <option value="Nachos">Nachos</option>
+            <option value="Hot Dogs">Hot Dogs</option>
+            <option value="Raspados">Raspados</option>
+            <option value="Bebidas">Bebidas</option>
+            <option value="Botanas">Botanas</option>
+            <option value="Dulces">Dulces</option>
+            <option value="Postres">Postres</option>
+            <option value="Otro">Otro</option>
           </select>
         </div>
 
@@ -303,6 +306,7 @@
     </form>
   </div>
 </section>
+
 
 <!-- PIE DE PÁGINA -->
 <footer>
